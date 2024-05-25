@@ -1,0 +1,200 @@
+.Root {
+    padding: 70px 0;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.Container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.Title {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+}
+
+.Text {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.BtnWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Img {
+    width: 200px;
+    height: 200px;
+}
+
+.ApproveBtn {
+    padding: 20px;
+    background: #e9a675;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-weight: 900;
+    width: 200px;
+    margin: 10px 20px;
+    transition: 0.3s;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+}
+
+.DeclineBtn {
+    padding: 20px;
+    background: none;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-weight: 900;
+    width: 200px;
+    margin: 10px 20px;
+    transition: 0.3s;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+}
+
+.ApproveBtn:hover {
+    color: white;
+    background: black;
+}
+
+.DeclineBtn:hover {
+    color: white;
+    background: black;
+}
+
+.ModalContent {
+    position: relative;
+    padding: 0 20px;
+    width: 400px;
+    height: 100%;
+}
+
+.CloseBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background: white;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CloseBtn img {
+    width: 20px;
+    height: 20px;
+}
+
+.CloseBtn:hover {
+    background: #eeeeee;
+}
+
+.InputWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.Input {
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+}
+
+.Flex {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.Flex label {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.Message {
+    margin-bottom: 5px;
+}
+
+.Textarea {
+    padding: 10px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.SubmitBtn {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    padding: 5px 10px;
+    background: #e9a675;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s;
+    font-size: 16px;
+    color: black;
+}
+
+.SubmitBtn:hover {
+    background: black;
+    color: #fff;
+}
+
+@media(max-width: 700px) {
+    .Root {
+        padding: 50px 0 35px;
+    }
+    .ModalContent {
+        padding-top: 30px;
+    }
+}
+
+@media(max-width: 630px) {
+    .BtnWrapper {
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+}
+
+@media(max-width: 500px) {
+    .Container {
+        padding: 0 25px;
+    }
+    .Title {
+        font-size: 2rem;
+    }
+    .Text {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    .DeclineBtn, .ApproveBtn {
+        padding: 15px;
+        font-size: 16px;
+    }
+    .ModalContent h2 {
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 400px) {
+    .ModalContent {
+        width: 320px;
+    }
+    .ModalContent label {
+        font-size: 14px;
+    }
+}

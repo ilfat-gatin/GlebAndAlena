@@ -1,0 +1,36 @@
+.Root {
+    padding: 70px 0;
+    border-bottom: 1px solid #e5e5e5;
+    background: #e9a675;
+}
+
+.Container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 50px;
+}
+
+.Title {
+    display: inline-block;
+    font-family: Miama Nueva Medium, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+@media(max-width: 700px) {
+    .Root {
+        padding: 35px 0;
+    }
+}
+
+@media(max-width: 400px) {
+    .Title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .Text {
+        font-size: 14px;
+    }
+}

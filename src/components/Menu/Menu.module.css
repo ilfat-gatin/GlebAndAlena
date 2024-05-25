@@ -1,0 +1,64 @@
+
+.Root {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid #dadada;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container {
+    display: flex;
+    justify-content: center;
+    gap: 112px;
+    align-items: center;
+    height: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.Container::-webkit-scrollbar {
+    display: none;
+}
+
+.Container a {
+    display: inline-block;
+    text-decoration: none;
+    color: gray;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.2s;
+    white-space: nowrap;
+}
+
+.Container a:hover {
+    text-decoration: underline;
+}
+
+@media(max-width: 950px) {
+    .Container {
+        gap: 100px
+    }
+}
+
+@media(max-width: 875px) {
+    .Container {
+        gap: 25px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        justify-content: flex-start;
+        padding: 20px 20px;
+    }
+}
+
+@media(max-width: 700px) {
+    .Container a {
+        border: 1px solid rgba(45,41,38,0.1);
+        border-radius: 20px;
+        padding: 5px 10px;
+    }
+}

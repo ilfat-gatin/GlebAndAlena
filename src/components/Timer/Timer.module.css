@@ -1,0 +1,96 @@
+.Root {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.Container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: -30px;
+    border-radius: 20px;
+    background: white;
+}
+
+.Item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background: #e9a675;
+    border-radius: 20px;
+    width: 160px;
+}
+
+.Value {
+    font-size: 40px;
+}
+
+@media (max-width: 800px) {
+    .Item {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 750px) {
+    .Item {
+        padding: 30px;
+        width: 130px;
+    }
+}
+
+@media (max-width: 700px) {
+    .Item {
+        padding: 30px;
+    }
+    .Value {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .Item {
+        padding: 20px;
+        width: 100px;
+        border-radius: 15px;
+    }
+    .Value {
+        font-size: 30px;
+    }
+    .Text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 475px) {
+    .Item {
+        padding: 15px;
+        width: 75px;
+        border-radius: 10px;
+    }
+    .Value {
+        font-size: 18px;
+    }
+    .Text {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .Container {
+        padding: 10px;
+    }
+    .Item {
+        padding: 6px 4px;
+        width: 65px;
+        border-radius: 10px;
+    }
+    .Value {
+        font-size: 18px;
+    }
+    .Text {
+        font-size: 10px;
+    }
+}

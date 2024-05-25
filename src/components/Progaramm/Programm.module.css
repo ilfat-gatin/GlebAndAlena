@@ -1,0 +1,94 @@
+.Root {
+    padding: 70px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.Container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.Title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.ItemTitle {
+    margin-bottom: 2rem;
+}
+
+.ProgrammItem1, .ProgrammItem2  {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.Left {
+    width: 45%;
+}
+
+.Right {
+    width: 45%;
+    background: url(../../assets/images/rings.jpg) center/cover no-repeat;
+}
+
+.Table {
+    border-collapse: collapse;
+    font-size: 20px;
+    /*font-weight: 600;*/
+}
+
+.Table td {
+    padding: 20px 0;
+    border-top: 1px solid darkgoldenrod;
+    border-bottom: 1px solid darkgoldenrod;
+    width: 50%;
+}
+
+.Left2 {
+    width: 45%;
+    background: url(../../assets/images/banket.jpg) center/cover no-repeat;
+}
+
+.Right2 {
+    width: 45%;
+}
+
+@media(max-width: 800px) {
+    .ProgrammItem1 {
+        flex-direction: column;
+    }
+
+    .ProgrammItem2 {
+        flex-direction: column-reverse;
+    }
+    .Left, .Right, .Left2, .Right2 {
+        width: 100%;
+    }
+    .Right, .Left2 {
+        height: 500px;
+    }
+    .Root {
+        padding: 50px 0 35px;
+    }
+    .Table td {
+        padding: 20px 0;
+        width: auto;
+        padding-right: 10px;
+    }
+}
+
+
+@media(max-width: 550px) {
+    .Container {
+        padding: 0 30px;
+    }
+    .Table {
+        font-size: 16px;
+    }
+    .Right, .Left2 {
+        height: 350px;
+    }
+
+}

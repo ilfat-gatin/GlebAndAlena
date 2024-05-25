@@ -1,0 +1,45 @@
+.Root {
+    padding: 70px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.Container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 50px;
+}
+
+.Title {
+    /*margin-bottom: 1rem;*/
+}
+
+.SubTitle {
+    margin-bottom: 1rem;
+}
+
+.Adress {
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.Img {
+    width: 200px;
+    margin-bottom: 1rem;
+}
+
+@media(max-width: 700px) {
+    .Root {
+        padding: 50px 0 35px;
+    }
+}
+
+@media(max-width: 500px) {
+    .SubTitle {
+        font-size: 20px;
+    }
+    .Adress {
+        font-size: 16px;
+        margin-bottom: 2rem;
+    }
+}

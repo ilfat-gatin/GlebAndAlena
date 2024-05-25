@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.Root {
+    height: 100vh;
+    background: url("../../assets/images/bg2.jpg") center/cover no-repeat;
+    margin-top: 50px;
+}
+
+.TextWrapper {
+    background: rgba(255, 255, 255, 0.53);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    border-radius: 0 0 25px 25px;
+    padding: 30px;
+}
+
+.Title {
+    font-family: Miama Nueva Medium, sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.TitleMobile{
+    display: none;
+}
+
+.Date {
+    font-family: Miama Nueva Medium, sans-serif;
+    font-size: 2rem;
+}
+
+@media (max-width: 800px) {
+    .Root {
+        background-image: url("../../assets/images/bg_mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .Title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1675px) {
+    .Title {
+        font-size: 2.5rem;
+    }
+
+    .Date {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 1450px) {
+    .Title {
+        font-size: 2rem;
+    }
+
+    .Date {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .Title {
+        font-size: 1.5rem;
+    }
+
+    .Date {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .TextWrapper {
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .TextWrapper {
+        width: 50%;
+        padding: 20px 15px;
+    }
+
+    .Title {
+        display: none;
+    }
+
+    .TitleMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .TitleMobile span {
+        font-family: Miama Nueva Medium, sans-serif;
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+}
