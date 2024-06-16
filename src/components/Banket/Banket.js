@@ -6,14 +6,13 @@ const Banket = () => {
     return (
         <div className={styles.Root} id="banket">
             <div className={styles.Container}>
-                <h1 className={styles.Title}>Банкет</h1>
+                <h1 className={styles.Title}>Банкетный зал</h1>
                 <img src={svg} alt="" className={styles.Img}/>
-                <h2 className={styles.SubTitle}>Усадьба Голубочка</h2>
-                <p className={styles.Adress}>Московская область, д. Горки Сухаревские, ул Центральная 66</p>
+                <h2 className={styles.SubTitle}>Ресторанный комплекс «Дикий»</h2>
+                <p className={styles.Adress}>Республика Татарстан, д.Кзыл-Иль , улица Солнечная 1Е</p>
             </div>
             <iframe
-                title="banket"
-                src="https://yandex.ru/map-widget/v1/?um=constructor%3A1192e3590a9da3a20542e63cb8c9fcf41c9a5d5cce050252cef652f9d23d81d6&amp;source=constructor"
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab19d7667588d441151ecd42a644afe32b9edad6d2f338feeaa4ba1d385cf9b62&amp;source=constructor"
                 width="100%" height="400" frameBorder="0"></iframe>
         </div>
     );

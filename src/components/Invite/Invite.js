@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import styles from './Invite.module.css';
 import heart from '../../assets/images/heart.jpg';
 import close from '../../assets/icons/closeIcon.svg';
+import adv from '../../assets/images/adventure.svg';
 import Modal from 'react-modal';
 
 Modal.setAppElement('#root')
@@ -27,7 +28,8 @@ const Invite = () => {
             marginRight: '-50%',
             transform: 'translate(-50%, -50%)',
             height: width < 600 ? "100%" : "",
-            width: width < 600 ? "100%" : ""
+            width: width < 600 ? "100%" : "",
+            zIndex: "11"
         },
     };
 
@@ -63,7 +65,7 @@ const Invite = () => {
 
     function sendEmail(e) {
         e.preventDefault()
-        emailjs.sendForm('service_w8i9szg', 'template_ctniyue', formRef.current, 'hPdbqVl2XXXwzEPN_')
+        emailjs.sendForm('service_7ew1ouv', 'template_45t0m3l', formRef.current, 'ztWIWkRVOvweGmXnX')
             .then(() => {
                 setIsOpen(false)
                 showSuccessToast()
@@ -80,7 +82,7 @@ const Invite = () => {
     };
 
     function showErrorToast(){
-        toast.error('Ошибка! Пожалуйста, свяжитесь с Ильфатом, его контакты вы можете найти в разделе "Вопросы".', {
+        toast.error('Ошибка! Пожалуйста, свяжитесь с Глебом, его контакты вы можете найти в разделе "Вопросы".', {
             position: toast.POSITION.TOP_CENTER
         });
     };
@@ -122,24 +124,37 @@ const Invite = () => {
                                 </select>
                             </div>
                             <div className={styles.InputWrapper}>
-                                <p>Останетесь на ночь /на второй день?</p>
+                                <p>Предпочтения по алкоголю</p>
                                 <div className={styles.Flex}>
-                                    <input type="radio" id="nightYes" name="night" value="Да"/>
-                                    <label htmlFor="nightYes">Да</label>
-                                    <input type="radio" id="nightNo" name="night" value="Нет"/>
-                                    <label htmlFor="nightNo">Нет</label>
+                                    <div style={{display: 'flex', alignItems: 'baseline'}}>
+                                        <input type="checkbox" id='whitewine' name="whiteWine" value="Вино белое"/>
+                                        <label htmlFor="whitewine">Вино белое</label>
+                                    </div>
+                                    <div style={{display: 'flex', alignItems: 'baseline'}}>
+                                        <input type="checkbox" id='redwine' name="redWine" value="Вино красное"/>
+                                        <label htmlFor="redwine">Вино красное</label>
+                                    </div>
+                                    <div style={{display: 'flex', alignItems: 'baseline'}}>
+                                        <input type="checkbox" id='strong' name="strong" value="Крепкое"/>
+                                        <label htmlFor="strong">Крепкий алкоголь</label>
+                                    </div>
                                 </div>
                             </div>
                             <div className={styles.InputWrapper}>
-                                <p>Предпочтения по алкоголю</p>
-                                <div className={styles.Flex}>
-                                    <input type="checkbox" id='shampain' name="shampain" value="Шампанское"/>
-                                    <label htmlFor="shampain">Шампанское</label>
-                                    <input type="checkbox" id='wine' name="wine" value="Вино"/>
-                                    <label htmlFor="wine">Вино</label>
-                                    <input type="checkbox" id='strong' name="strong" value="Крепкое"/>
-                                    <label htmlFor="strong">Крепкий алкоголь</label>
+                                <p>Нужен ли Вам трансфер?</p>
+                                <div className={styles.TransferQuestion}>
+                                    <input type="radio" id='transferYes1' name="transfer" value="Да, до банкетного зала и обратно до Казани"/>
+                                    <label htmlFor="transferYes1">Да, до банкетного зала и обратно до Казани</label>
                                 </div>
+                                <div className={styles.TransferQuestion}>
+                                    <input type="radio" id='transferYes2' name="transfer" value="Да, только обратно до Казани"/>
+                                    <label htmlFor="transferYes2">Да, только обратно до Казани</label>
+                                </div>
+                                <div className={styles.TransferQuestion}>
+                                    <input type="radio" id='transferNo' name="transfer" value="Нет, доберусь самостоятельно"/>
+                                    <label htmlFor="transferNo">Нет, доберусь самостоятельно</label>
+                                </div>
+
                             </div>
                             <div className={styles.InputWrapper}>
                                 <label htmlFor="message" className={styles.Message}>Сообщение молодоженам</label>
@@ -171,15 +186,16 @@ const Invite = () => {
                 </div>
             </Modal>
             <div className={styles.Container}>
-                <h1 className={styles.Title}>Дорогие друзья!</h1>
-                <p className={styles.Text}>Мы создаем семью и хотим провести этот день в кругу близких людей.</p>
-                <p className={styles.Text}>Мы будем рады, если вы разделите это событие с нами!</p>
-                <p className={styles.Text}>Пожалуйста, подтвердите или отклоните участие.</p>
+                <h1 className={styles.Title}>ДОРОГИЕ ГОСТИ!</h1>
+                <p className={styles.Text}>В жизни бывают такие счастливые моменты, которые немыслимы без присутствия рядом родных, близких и друзей.</p>
+                <p className={styles.Text}>Приглашаем Вас разделить с нами этот незабываемый день - день создания нашей семьи!</p>
+                <p className={styles.Text}>Вы можете подтвердить или же отклонить участие.</p>
                 <div className={styles.BtnWrapper}>
                     <button className={styles.DeclineBtn} onClick={handleDecline}>Отклонить</button>
                     <img src={heart} alt="" className={styles.Img}/>
                     <button className={styles.ApproveBtn} onClick={handleApprove}>Подтвердить</button>
                 </div>
+                <img src={adv} alt="" className={styles.AdvImg}/>
             </div>
         </div>
     );

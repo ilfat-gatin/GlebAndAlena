@@ -3,12 +3,14 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.96);
+    background: rgba(255, 255, 255);
     border-bottom: 1px solid #dadada;
     height: 50px;
-    display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
+    animation-name: fadeInUp;
+    animation-duration: 0.5s;
 }
 
 .Container {
@@ -37,6 +39,18 @@
 
 .Container a:hover {
     text-decoration: underline;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        top: -50px;
+    }
+
+    to {
+        opacity: 1;
+        top: 0;
+    }
 }
 
 @media(max-width: 950px) {

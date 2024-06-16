@@ -1,10 +1,10 @@
 .Root {
     padding: 70px 0;
-    border-bottom: 1px solid #e5e5e5;
+    /*border-bottom: 1px solid #e5e5e5;*/
 }
 
 .Container {
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 0 50px;
 }
@@ -35,31 +35,35 @@
 }
 
 .Color {
-    width: 16%;
+    flex-grow: 1;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     margin-bottom: 10px;
 }
 
 .Color1 {
-    background: #edd5a5;
+    background: #f2e5dd;
 
 }
 
 .Color2 {
-    background: #edd0b9;
+    background: #e3c6b3;
 }
 
 .Color3 {
-    background: #e4b6a3;
+    background: #bbc0ac;
 }
 
 .Color4 {
-    background: #cba282;
+    background: #96904e;
 }
 
 .Color5 {
-    background: #c99785;
+    background: #6a7643;
+}
+
+.Color6 {
+    background: #486950;
 }
 
 @media(max-width: 700px) {

@@ -8,7 +8,6 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    margin-top: -30px;
     border-radius: 20px;
     background: white;
 }
@@ -19,7 +18,7 @@
     justify-content: center;
     align-items: center;
     padding: 50px;
-    background: #e9a675;
+    background: #bbc0ac;
     border-radius: 20px;
     width: 160px;
 }

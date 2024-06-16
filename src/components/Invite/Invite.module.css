@@ -1,11 +1,11 @@
 .Root {
     padding: 70px 0;
     text-align: center;
-    border-bottom: 1px solid #e5e5e5;
+    /*border-bottom: 1px solid #e5e5e5;*/
 }
 
 .Container {
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 0 50px;
 }
@@ -18,6 +18,10 @@
 .Text {
     font-size: 1.25rem;
     margin-bottom: 10px;
+}
+
+.AdvImg {
+    margin-top: 70px;
 }
 
 .BtnWrapper {
@@ -33,7 +37,7 @@
 
 .ApproveBtn {
     padding: 20px;
-    background: #e9a675;
+    background: #bbc0ac;
     border-radius: 10px;
     border: 1px solid black;
     font-weight: 900;
@@ -119,7 +123,7 @@
     margin-top: 5px;
 }
 
-.Flex label {
+label {
     margin-left: 5px;
     margin-right: 10px;
 }
@@ -140,7 +144,7 @@
     width: fit-content;
     margin: auto;
     padding: 5px 10px;
-    background: #e9a675;
+    background: #bbc0ac;
     border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
@@ -152,6 +156,10 @@
 .SubmitBtn:hover {
     background: black;
     color: #fff;
+}
+
+.TransferQuestion {
+    margin: 5px 0;
 }
 
 @media(max-width: 700px) {

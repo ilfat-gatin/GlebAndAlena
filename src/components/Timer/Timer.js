@@ -3,7 +3,7 @@ import { useTimer } from "react-timer-hook";
 import styles from './Timer.module.css'
 
 const Timer = () => {
-    const date = new Date("2023-07-17T15:30:00.00+03:00")
+    const date = new Date("2024-08-23T16:00:00.00+03:00")
     const {
         seconds,
         minutes,
