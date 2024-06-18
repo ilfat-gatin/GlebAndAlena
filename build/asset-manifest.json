@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e300acf3.css",
+    "main.js": "/static/js/main.671a99f3.js",
+    "static/media/right.JPG": "/static/media/right.18f27910802ceb1f56df.JPG",
+    "static/media/center.JPG": "/static/media/center.64e5b2951547c3bce747.JPG",
+    "static/media/left.JPG": "/static/media/left.00dbffc50c99da5a94e9.JPG",
+    "static/media/ofont.ru_Miama Nueva.ttf": "/static/media/ofont.ru_Miama Nueva.9837b9f4c96faa8265db.ttf",
+    "static/media/rings.jpg": "/static/media/rings.94af121a13742303d1c8.jpg",
+    "static/media/banket.jpg": "/static/media/banket.f517f03ee0b1da8e5e04.jpg",
+    "static/media/heart.jpg": "/static/media/heart.9299a4fc6a7420548e58.jpg",
+    "static/media/adventure.svg": "/static/media/adventure.217d983246bef1a5a63efe604064b034.svg",
+    "static/media/shampagne.jpg": "/static/media/shampagne.ac7bbfbb699b5aeda5b4.jpg",
+    "static/media/green_heart.svg": "/static/media/green_heart.c5870ee9bf9ada74f6aed57f418b771c.svg",
+    "index.html": "/index.html",
+    "static/media/closeIcon.svg": "/static/media/closeIcon.2001e956d267bc9b1a2349ee0a8ee521.svg",
+    "main.e300acf3.css.map": "/static/css/main.e300acf3.css.map",
+    "main.671a99f3.js.map": "/static/js/main.671a99f3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e300acf3.css",
+    "static/js/main.671a99f3.js"
+  ]
+}
